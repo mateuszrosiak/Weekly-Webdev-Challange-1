@@ -1,1 +1,1 @@
-# Weekly-Webdev-Challange-1
+# Weekly Webdev Challange 1
