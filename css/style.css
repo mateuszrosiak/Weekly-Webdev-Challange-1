@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Titillium Web";
+    font-size: 16px;
+    font-weight: 300;
+    background: url(../img/masteralb-background.png), url(../img/masteralb-background-opacity.png) no-repeat;
+    background-blend-mode: screen;
+    background-size: 100% 100%;
+    /* height: 100vh; */
+}
+
+::placeholder {
+    color: #afafaf;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+    color: #dedede;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1282px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    margin: 25px 20px;
+}
+
+.logo__image {
+    margin: 0 auto;
+    max-width: 100%;
+    /* max-width: 429px; */
+}
+
+.form-section {
+    text-align: center;
+}
+
+.form {
+    width: 90%;
+    max-width: 460px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.form__header {
+    text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    /* text-align: center; */
+}
+
+.form__element {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.form__container {
+    padding: 22px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+.form__item {
+    display: flex;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    margin-bottom: 21px;
+    height: 40px;
+    font-family: inherit;
+    color: #dedede;
+}
+
+.form__input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.form__textarea {
+    width: 100%;
+    background-color: #f8f8f8;
+    font-family: inherit;
+    font-weight: 300;
+    padding: 5px;
+    border: 1px solid #c6c6c6;
+    outline: none;
+}
+
+.form__item--textarea {
+    height: auto;
+}
+
+.form__item.form__item--checkbox {
+    border: none;
+    height: auto;
+    color: #afafaf;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.form__item.form__item--two-col {
+    border: none;
+    height: auto;
+    color: #afafaf;
+    align-items: center;
+    margin-bottom: 14px;
+    justify-content: space-between;
+
+}
+
+.form__item .icon {
+    align-self: center;
+    min-width: 50px;
+    border-right: 2px solid #dedede;
+    line-height: 30px;
+    font-size: 23px;
+}
+
+.form__input {
+    -webkit-appearance: none;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    background-color: #f4f4f4;
+    padding-left: 20px;
+    color: #afafaf;
+}
+
+.form__checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+
+.form__checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: #88c814;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 0 #ffffff, inset 1px 1px 1px rgba(255, 255, 255, 0.41);
+}
+
+.form__checkbox:hover {
+    background-color: #dedede;
+    transition: all 0.3s linear;
+}
+
+.form__checkbox:checked::after {
+    display: block;
+}
+
+.form__check-label {
+    font-size: 17px;
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border: 1px solid #3b9a00;
+    background-color: #93d02b;
+    border-radius: 3px;
+}
+
+.btn--small-width {
+    width: 150px;
+    height: 41px;
+}
+
+.btn--inactive {
+    background-color: #bcdb97;
+    border: 1px solid #90ca6d;
+}
+
+.btn--red {
+    background-color: #f4495b;
+    border: 1px solid #a2202a;
+    box-shadow: 1px 1px 0 #ffffff, inset 1px 1px 1px rgba(255, 255, 255, 0.41);
+}
+
+/* .btn.btn--small-width */
+
+.btn__text {
+    text-shadow: 1px 1px 0 #51850e;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .form {
+        min-width: 420px;
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+}

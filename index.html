@@ -5,12 +5,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly WebDev Challenge 1</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+    <div class="wrapper">
+        <header class="logo"><img src="img/masteralb-logo-top.png" alt="" class="logo__image"></header>
+        <section class="form-section">
 
+            <div class="row">
+                <div class="form form--first">
+                    <h3 class="form__header">Register Form</h3>
+                    <div class="form__element">
+                        <form action="" class="form__container">
+                            <div class="form__item">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" class="form__input" placeholder="Username">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-lock icon"></i>
+                                <input type="password" class="form__input" placeholder="Password">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-lock icon"></i>
+                                <input type="password" class="form__input" placeholder="Confirm password">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" class="form__input" placeholder="Email">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-map-marker icon"></i>
+                                <input type="text" class="form__input" placeholder="Your location" name="location"
+                                    list="location">
+                                <datalist id="location">
+                                    <option value="Warsaw">
+                                    <option value="Krakow">
+                                </datalist>
+                            </div>
+
+                            <div class="form__item form__item--checkbox">
+                                <input type="checkbox" class="form__checkbox" name="check" id="check" checked>
+                                <label for="check" class="form__check-label">I have read and accept the terms of
+                                    use.</label>
+                            </div>
+
+                            <button class="btn">
+                                <span class="btn__text">Sign up</span>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form form--second">
+                    <h3 class="form__header">Send Email</h3>
+                    <div class="form__element">
+                        <form action="" class="form__container">
+                            <div class="form__item">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" class="form__input" placeholder="Your Name">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" class="form__input" placeholder="Your Email">
+                            </div>
+
+                            <div class="form__item form__item--textarea">
+                                <textarea rows="11" cols="60" class="form__textarea"
+                                    placeholder="Type your message ..."></textarea>
+
+                            </div>
+
+
+                            <div class="form__item form__item--checkbox">
+                                <input type="checkbox" class="form__checkbox" name="check" id="check" checked>
+                                <label for="check" class="form__check-label">Send a copy to my Email</label>
+                            </div>
+
+                            <button class="btn">
+                                <span class="btn__text">Sign up</span>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form form--third">
+                    <h3 class="form__header">Sign In Form</h3>
+                    <div class="form__element">
+                        <form action="" class="form__container">
+                            <div class="form__item">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" class="form__input" placeholder="Username">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-lock icon"></i>
+                                <input type="password" class="form__input" placeholder="Password">
+                            </div>
+
+                            <div class="form__item form__item--two-col">
+                                <div class="form__input-wrap"><input type="checkbox" class="form__checkbox" name="check"
+                                        id="check" checked>
+                                    <label for="check" class="form__check-label">Remember me</label></div>
+
+
+
+                                <button class="btn btn--small-width">
+                                    <span class="btn__text">Sign in</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form form--fourth">
+                    <h3 class="form__header">Recover Form</h3>
+                    <div class="form__element">
+                        <form action="" class="form__container">
+                            <div class="form__item">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" class="form__input" placeholder="Enter your Email">
+                            </div>
+
+                            <div class="form__item">
+                                <i class="fa fa-mobile icon"></i>
+                                <input type="email" class="form__input" placeholder="Enter your Phone number">
+                            </div>
+
+                            <div class="form__item form__item--two-col">
+                                <button class="btn btn--small-width">
+                                    <span class="btn__text">Send</span>
+                                </button>
+
+                                <button class="btn btn--small-width btn--inactive">
+                                    <span class="btn__text">Done</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form form--fifth">
+                    <h3 class="form__header">Subscribe Form</h3>
+                    <div class="form__element">
+                        <form action="" class="form__container">
+                            <div class="form__item">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" class="form__input" placeholder="Enter your Email">
+                            </div>
+
+                            <div class="form__item form__item--two-col">
+                                <button class="btn btn--small-width">
+                                    <span class="btn__text">Send</span>
+                                </button>
+
+                                <button class="btn btn--small-width btn--red">
+                                    <span class="btn__text">Done</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
 </body>
 
 </html>
